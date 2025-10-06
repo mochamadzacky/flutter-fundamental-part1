@@ -11,3 +11,8 @@
 
 ![git init](image-3.png)
 kembali ke vscode lalu buka terminal (git init)
+![push](image-4.png)
+mengepush projek pertama saya di github
+![tampilan github](image-5.png)
+mengerun aplikasi flutter pertama saya 
+![alt text](image-6.png)
