@@ -43,6 +43,9 @@ Membuat file fab_widget.dart pada folder basic widget
 ![fab_widget](image-16.png)
 kemudian menampilkannya pada aplikasi saya 
 ![fab_widget](image-17.png)
+Scaffold Widget 
+mengubah kode main.dart dan menampilkan nya seperti berikut 
+![scaffold widget](image-18.png)
 
 
 
