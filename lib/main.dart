@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'basic_widgets/text_widget.dart';
+import 'basic_widgets/image_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,35 +12,30 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Counter',
+      title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const CounterPage(),
+      home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
 
-class CounterPage extends StatefulWidget {
-  const CounterPage({super.key});
+class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key, required this.title});
+
+  final String title;
 
   @override
-  State<CounterPage> createState() => _CounterPageState();
+  State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _CounterPageState extends State<CounterPage> {
+class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
-  void _increment() {
+  void _incrementCounter() {
     setState(() {
       _counter++;
-    });
-  }
-
-  void _decrement() {
-    setState(() {
-      _counter--;
     });
   }
 
@@ -46,30 +43,28 @@ class _CounterPageState extends State<CounterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Counter App"),
-        centerTitle: true,
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: Text(widget.title),
       ),
       body: Center(
-        child: Text(
-          'Angka: $_counter',
-          style: const TextStyle(fontSize: 30),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const MyImageWidget(), // ✅ tampilkan gambar di atas
+            const SizedBox(height: 20),
+            const MyTextWidget(), // teks kamu
+            const SizedBox(height: 20),
+            Text(
+              '$_counter',
+              style: Theme.of(context).textTheme.headlineMedium,
+            ),
+          ],
         ),
       ),
-      floatingActionButton: Row(
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: [
-          FloatingActionButton(
-            onPressed: _decrement,
-            tooltip: 'Kurangi',
-            child: const Icon(Icons.remove),
-          ),
-          const SizedBox(width: 10),
-          FloatingActionButton(
-            onPressed: _increment,
-            tooltip: 'Tambah',
-            child: const Icon(Icons.add),
-          ),
-        ],
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: const Icon(Icons.add),
      ),
 );
 }
