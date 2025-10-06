@@ -51,6 +51,12 @@ Dialog widget pada flutter memiliki dua jenis dialog yaitu AlertDialog dan Simpl
 Mengubah isi main.dart dan menampilkannya seperti berikut
 ![dialog](image-19.png)
 ![message](image-20.png)
+Date and Time Pickers
+Date and Time Pickers termasuk pada kategori input dan selection widget, berikut adalah contoh penggunaan Date and Time Pickers.
+mengubah kode main.dart dan menampilkannya pada aplikasi saya 
+![date](image-21.png)
+![input data](image-22.png)
+
 
 
 
