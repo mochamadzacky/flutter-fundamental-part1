@@ -46,6 +46,13 @@ kemudian menampilkannya pada aplikasi saya
 Scaffold Widget 
 mengubah kode main.dart dan menampilkan nya seperti berikut 
 ![scaffold widget](image-18.png)
+Dialog widget 
+Dialog widget pada flutter memiliki dua jenis dialog yaitu AlertDialog dan SimpleDialog.
+Mengubah isi main.dart dan menampilkannya seperti berikut
+![dialog](image-19.png)
+![message](image-20.png)
+
+
 
 
 
