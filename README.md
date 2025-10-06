@@ -34,6 +34,19 @@ Lanjut melakukan penyesuaian asset pada file pubspec.yaml
 Berhasil menampilkan gambar pada aplikasi saya 
 ![logo polinema](image-13.png)
 
+# PRAKTIKUM 5 : Menerapkan Widget Material Design dan iOS Cupertino
+Membuat file loading_cupertino.dart pada folder basic widget 
+![loading_cupertino](image-14.png)
+Berikut contoh button loading pada tampilan aplikasi saya 
+![button loading](image-15.png)
+Membuat file fab_widget.dart pada folder basic widget
+![fab_widget](image-16.png)
+kemudian menampilkannya pada aplikasi saya 
+![fab_widget](image-17.png)
+
+
+
+
 
 
 
